@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MX Player Bookmark XML Generator</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Input Section</h2>
+    <div class="input-group">
+      <label>Hour: <input type="number" id="hour" min="0" max="23" value="0"></label>
+      <label>Minute: <input type="number" id="minute" min="0" max="59" value="0"></label>
+      <label>Second: <input type="number" id="second" min="0" max="59" value="0"></label>
+    </div>
+    <div class="input-group">
+      <label>Bookmark Name: <input type="text" id="bookmarkName" placeholder="Bookmark Title"></label>
+      <button id="addBookmarkBtn" class="neu-button">Add Bookmark</button>
+    </div>
+
+    <h2>Output XML</h2>
+    <textarea id="output" readonly><?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<bookmarks>
+</bookmarks></textarea>
+    <div class="button-group">
+      <button id="copyBtn" class="neu-button">Copy XML</button>
+      <button id="saveBtn" class="neu-button">Save XML File</button>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
